@@ -55,7 +55,7 @@ namespace FigurasGeometricas
         {
             bool igual;
 
-            if(obj == null) throw new ArgumentNullException($"{obj} is null"); //de q vale aqui definir un tipo de excepcion
+            if(obj == null) throw new ArgumentNullException($"{obj} is null"); 
 
             igual = (this.X == obj.X) && (this.Y == obj.Y);
 

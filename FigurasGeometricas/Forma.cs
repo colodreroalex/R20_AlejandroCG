@@ -57,7 +57,7 @@ namespace FigurasGeometricas
     {
 
         private string _color; 
-        private string _name;
+        private string _name;   //Protected --> Igual que el private, solo que si esa clase hereda. Se podria modificar este miembro desde la clase deribada
         private Punto _coordCentro;
         //Composicion : Yo tengo/creo una clase , dentro de otra clase , genero un miembro de la clase generada anteriormente.
 
@@ -131,7 +131,7 @@ namespace FigurasGeometricas
         {
             string salida;
 
-            salida = "FORMA: \n";
+            salida = "FORMA \n";
             salida += $"Nombre: {Nombre}\n";
             salida += $"Color: {Color}\n";
             salida += $"Posicion: {Centro}";
